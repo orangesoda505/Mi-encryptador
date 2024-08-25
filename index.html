@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encrypt it!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img class="logo__img" src="img/minilogo.png" alt="logo" />
+        <h2 class="title">Encriptador de texto</h2>
+      </div>
+    </header>
+
+        <main>
+      <section class="izquierda">
+        <textarea
+          class="ingresaTexto"
+          id="izquierdaTexto"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div></div>
+        <span class="advertencia"> Solo letras minúsculas y sin acentos</span>
+        <div class="botones">
+          <button class="boton__encryptar" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button class="desencrypta" onclick="desencriptar()">
+            Desencriptar
+          </button>
+        </div>
+
+      
+        
+
+      </section>
+
+      <button class="cambio">
+        <img class="imagen_medio" src="./img/cambiopc.png" alt="cambio">
+      </button>
+      
+      <section class="derecha">
+        <img class="toro__pregunta" src="./img/ihaveANSWER.png" alt="???" />
+        <p id="informacion" class="informacion">
+          Ingrese el texto que desees encriptar o desencriptar
+        </p>
+        <textarea
+          class="noFound"
+          id="mensaje"
+          placeholder="Ningún mensaje fue encontrado"
+          readonly
+        ></textarea>
+        <button id="copiar" onclick="copiarTexto()">Copiar</button>
+      </section>
+    </main>
+
+    <footer>
+      <img class="foto" src="./img/cahara.png" alt="foto" />
+      <p>Desarrollado por Anto en VS code</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+  </body>
+  <script src="index.js"></script>
+</html>

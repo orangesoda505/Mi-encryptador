@@ -1,0 +1,243 @@
+:root {
+  --header-height: 80px;
+  --footer-height: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fabc3f;
+  color: #000000;
+  box-sizing: content-box;
+}
+
+.header {
+  display: flex;
+  height: 70px;
+  background-color: #eb5b00;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__img {
+  height: 100px;
+  width: 125;
+  margin-right: 5px;
+  background-color: #ff9800;
+  border-radius: 8px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+  border-style: inset;
+  border-color: #ffda76;
+}
+
+.title {
+  font-family: "arial black";
+  font-size: 30px;
+  font-weight: 1rem;
+  padding-right: 10px;
+  background-color: #e9c46a;
+  color: #e76f51;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-style: solid;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.izquierda {
+  background-color: #ffffffc3;
+  border-radius: 28px;
+  padding: 50px;
+  box-shadow: 0px 24px 32px -8px rgba(110, 136, 121, 0.479);
+  width: 80%;
+  max-width: 500px;
+  margin: 10px 0;
+  flex-grow: 0;
+}
+
+.ingresaTexto {
+  color: #495057;
+  width: 80%;
+  font-size: 20px;
+  color: var(--color-azul);
+  background-color: #ffffffc3;
+  border: none;
+  outline: none;
+  resize: none;
+  flex-grow: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.advertencia {
+  font-size: 12px;
+  color: #120f0cc4;
+  margin-top: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.advertencia,
+.botones {
+  position: relative;
+  top: 60px;
+  margin: auto;
+}
+
+.botones {
+  margin-bottom: 10%;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.derecha {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.763);
+  border-radius: 28px;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 24px 32px -8px rgba(110, 136, 121, 0.479);
+}
+
+.derechaAbajo {
+  position: relative;
+  bottom: -50px;
+  margin: auto;
+}
+.toro__pregunta {
+  width: auto;
+  height: auto;
+}
+
+.derecha img {
+  width: 30%;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.informacion,
+.inspo {
+  color: #495057;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.noFound {
+  border: none;
+  outline: none;
+  resize: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #495057;
+  font-family: regular;
+}
+
+button {
+  background-color: ##eb5b00;
+  color: #fcfcfc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.boton__encryptar {
+  margin-top: 10px;
+  background-color: #eb5b00;
+  font-family: "Courier New", Courier, monospace;
+}
+button:hover {
+  background-color: #fabc3f;
+}
+
+#copiar,
+.desencrypta {
+  margin-top: 10px;
+  background-color: #eb5b00;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.imagen_medio {
+  display: flex;
+  place-items: center;
+  width: 105px;
+  height: auto;
+  margin: 0%;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e76f51;
+  color: #000000;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer .redesSociales {
+  margin-top: 10px;
+}
+
+footer .redesSociales a {
+  margin: 0 10px;
+}
+
+footer .redesSociales img,
+.foto {
+  width: 30px;
+  transition: transform 0.3s;
+  border-radius: 50%;
+}
+.foto {
+  width: 40px;
+}
+
+footer .redesSociales img:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .izquierda,
+  .derecha {
+    max-width: 40%;
+  }
+}
